@@ -117,6 +117,29 @@ metamask_automation.signConfirm()
 metamask_automation.signReject()
 ```
 
+#### 10. Авторизация:
+
+Подтверждение авторизации:
+```sh
+metamask_automation.signInConfirm()
+```
+Отклонение авторизации:
+```sh
+metamask_automation.signInReject()
+```
+
+#### 11. Регистрация:
+
+Подтверждение регистрации:
+```sh
+metamask_automation.signOutConfirm()
+```
+Отклонение регистрации:
+```sh
+metamask_automation.signOutReject()
+```
+
+
 ### Ошибки:
 
 список pip показывает пакет, “metamask_automation”но ваша среда IDE не обнаруживает пакет
