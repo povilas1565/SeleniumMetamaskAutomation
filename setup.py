@@ -15,7 +15,7 @@ setup(name='MetamaskAutomation',
       version='0.0.3',
       packages=['selenium_metamask_automation'],
       description="Package for automating metamask workflows",
-      keywords="Metamask blockchain automate-metamask install-metamask-extension-selenium selenium-metamask metamask-automation",
+      keywords="SeleniumMetamask blockchain automate-metamask install-metamask-extension-selenium selenium-metamask metamask-automation",
       install_requires=["selenium>=3.141.0"],
       extras_require = {
         'windows':  ["pywin32"]
