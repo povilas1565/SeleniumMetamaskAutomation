@@ -5,11 +5,11 @@
 #### Для установки:
 
 ```sh
-pip install ./metamask_automation
+pip install ./selenium_metamask_automation
 ```
 или
 ```sh
-pip install -i https://test.pypi.org/simple/ metamask-automation
+pip install -i https://test.pypi.org/simple/ selenium-metamask-automation
 ```
 Проверить, существует ли:
 ```sh
@@ -21,7 +21,7 @@ pip list
 #### 1. Скачать расширение:
 
 ```sh
-metamask_automation.downloadMetamaskExtension()
+selenium_metamask_automation.downloadMetamaskExtension()
 ```
 Эта функция должна быть запущена один раз перед всеми функциями для загрузки расширения метамаски. Если вы измените каталог или создадите файл python в другом месте, его необходимо запустить первым, иначе будет выдано следующее исключение:
 
@@ -29,7 +29,7 @@ metamask_automation.downloadMetamaskExtension()
 
 #### 2. Запуск расширения:
 ```sh
-metamask_automation.launchMetamaskExtension(args)
+selenium_metamask_automation.launchMetamaskExtension(args)
 ```
 args: путь к веб-драйверу Chrome.
 
@@ -44,7 +44,7 @@ driver.get("https://google.com")
 ```
 #### 3. Импорт кошелька:
 ```sh
-metamask_automation.metamaskSetup(arg1, arg2)
+selenium_metamask_automation.metamaskSetup(arg1, arg2)
 ```
 arg1 : начальная фраза для кошелька
 arg2: пароль от кошелька
@@ -52,7 +52,7 @@ arg2: пароль от кошелька
 
 #### 4. Смена сети метамаски:
 ```sh
-metamask_automation.changeMetamaskNetwork(arg)
+selenium_metamask_automation.changeMetamaskNetwork(arg)
 ```
 arg: название сети
 
@@ -66,43 +66,43 @@ arg: название сети
 
 #### 5. Соединение с любым сайтом:
 ```sh
-metamask_automation.connectToWebsite()
+selenium_metamask_automation.connectToWebsite()
 ```
 
 Чтобы воспользоваться этой функцией, вы должны сначала зайти на веб-сайт.
 ```sh
 driver.get("https://google.com")
-metamask_automation.connectToWebsite()
+selenium_metamask_automation.connectToWebsite()
 ```
 
 #### 6. Проведенение различных одобренных транзакций:
 
 Подтверждение: 
 ```sh 
-metamask_automation.confirmApprovalFromMetamask()
+selenium_metamask_automation.confirmApprovalFromMetamask()
 ```
 
 Отклонение: 
 ```sh 
-metamask_automation.rejectApprovalFromMetamask()
+selenium_metamask_automation.rejectApprovalFromMetamask()
 ```
 
 #### 7. Проведение любых транзакций, кроме одобренных:
 
 Подтверждение: 
 ```sh
-metamask_automation.confirmTransactionFromMetamask()
+selenium_metamask_automation.confirmTransactionFromMetamask()
 ```
 
 Отклонение: 
 ```sh
-metamask_automation.rejectTransactionFromMetamask()
+selenium_metamask_automation.rejectTransactionFromMetamask()
 ```
 
 #### 8. Добавление токена в свой кошелек:
 
 ```sh
-metamask_automation.addToken(arg)
+selenium_metamask_automation.addToken(arg)
 ```
 arg: контрактный адрес токена
 
@@ -110,39 +110,39 @@ arg: контрактный адрес токена
 
 Подтверждение знака: 
 ```sh
-metamask_automation.signConfirm()
+selenium_metamask_automation.signConfirm()
 ```
 Отклонение знака: 
 ```sh
-metamask_automation.signReject()
+selenium_metamask_automation.signReject()
 ```
 
 #### 10. Авторизация:
 
 Подтверждение авторизации:
 ```sh
-metamask_automation.signInConfirm()
+selenium_metamask_automation.signInConfirm()
 ```
 Отклонение авторизации:
 ```sh
-metamask_automation.signInReject()
+selenium_metamask_automation.signInReject()
 ```
 
 #### 11. Регистрация:
 
 Подтверждение регистрации:
 ```sh
-metamask_automation.signOutConfirm()
+selenium_metamask_automation.signOutConfirm()
 ```
 Отклонение регистрации:
 ```sh
-metamask_automation.signOutReject()
+selenium_metamask_automation.signOutReject()
 ```
 
 
 ### Ошибки:
 
-список pip показывает пакет, “metamask_automation”но ваша среда IDE не обнаруживает пакет
+список pip показывает пакет, “selenium_metamask_automation”но ваша среда IDE не обнаруживает пакет
 
 ##### Решение:
 

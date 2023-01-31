@@ -11,7 +11,7 @@ except FileNotFoundError:
     long_description = "Package for automating metamask workflows"
 
 
-setup(name='MetamaskAutomation',
+setup(name='SeleniumMetamaskAutomation',
       version='0.0.3',
       packages=['selenium_metamask_automation'],
       description="Package for automating metamask workflows",
